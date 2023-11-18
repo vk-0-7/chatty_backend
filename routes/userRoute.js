@@ -1,6 +1,6 @@
 const express=require('express');
 
-const {Register,Login,getallUser}=require('../controllers/usercontroller')
+const {Register,Login,getallUser}=require('../controllers/userControllerr')
 
 
 
