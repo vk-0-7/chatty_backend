@@ -45,11 +45,10 @@ server.listen(PORT, () => {
 
 
 const io = require("socket.io")(server, {
-  pingTimeOut: 6000,
+
   cors: {
-    origin: "https://chat-ty.vercel.app/",
-    methods: ["GET", "POST"],
-    allowedHeaders: ["my-custom-header"],
+    origin: "https://chat-ty.vercel.app/mychat",
+
   },
 });
 
