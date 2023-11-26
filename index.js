@@ -39,16 +39,10 @@ server.listen(PORT, () => {
 });
 
 
-
-
-
-
-
 const io = require("socket.io")(server, {
-
   cors: {
-    origin: "https://chat-ty.vercel.app/mychat",
-
+    origin: '*',
+    methods: ["GET", "POST"],
   },
 });
 
